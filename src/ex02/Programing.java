@@ -28,42 +28,43 @@ public class Programing {
      * sc.close();
      * }
      */
+
+    // 3번
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("x: ");
+        int x = input.nextInt();
+
+        System.out.print("y: ");
+        int y = input.nextInt();
+
+        System.out.println("두수의 합: " + (x + y));
+        System.out.println("두수의 차: " + (x - y));
+        System.out.println("두수의 곱: " + (x * y));
+        System.out.println("두수의 평균: " + (double) (x + y) / 2);
+
+        int max = (x > y ? x : y);
+        int min = (x < y ? x : y);
+        System.out.println("큰수: " + max);
+        System.out.println("작은수: " + min);
+
+        input.close();
+    }
+
     /*
-     * //3번
+     * // 4번
      * public static void main(String[] args) {
-     * Scanner input = new Scanner(System.in);
+     * boolean P = true;
+     * boolean Q = true;
      * 
-     * System.out.print("x: ");
-     * int x = input.nextInt();
+     * System.out.println("P\tQ\tAND\tOR\tXOR");
+     * System.out.print((P == P) + "\t ");
+     * System.out.print((Q == Q) + "\t ");
+     * System.out.print((P == P && Q == Q) + "\t ");
+     * System.out.print((P == P || Q == Q) + "\t ");
+     * System.out.print((P == P != Q == Q) + "\t  ");
      * 
-     * System.out.print("y: ");
-     * int y = input.nextInt();
-     * 
-     * System.out.println("두수의 합: " + (x+y));
-     * System.out.println("두수의 차: " + (x-y));
-     * System.out.println("두수의 곱: "+ (x*y));
-     * System.out.println("두수의 평균: "+ (double)(x+y)/2);
-     * 
-     * int max=(x>y ? x : y);
-     * int min=(x<y ? x : y);
-     * System.out.println("큰수: "+ max);
-     * System.out.println("작은수: "+min);
-     * 
-     * input.close();
      * }
      */
-
-    // 4번
-    public static void main(String[] args) {
-        boolean P = true;
-        boolean Q = true;
-
-        System.out.println("P\tQ\tAND\tOR\tXOR");
-        System.out.print((P == P) + "\t ");
-        System.out.print((Q == Q) + "\t ");
-        System.out.print((P == P && Q == Q) + "\t ");
-        System.out.print((P == P || Q == Q) + "\t ");
-        System.out.print((P == P != Q == Q) + "\t  ");
-
-    }
 }
