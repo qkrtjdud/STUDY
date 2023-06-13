@@ -12,6 +12,7 @@ public class ExApp {
         System.out.println("==============");
         BurgerSet bs3 = new BurgerSet(b1, c1, p1, sp, 2);
         System.out.println(bs3.getStrong());
+        System.out.println(b1.getDesc());
         System.out.println("==============");
 
         BurgerSet bs = new BurgerSet(b1, c1, p1, sp);
